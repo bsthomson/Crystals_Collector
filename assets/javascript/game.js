@@ -78,13 +78,11 @@ var restart = function() {
         if (counter == targetNumber) {
             $("#victory").text("You Win!");
             winCounter += 1;
-            return winCounter;
             restart();
         }
         else if (counter >= targetNumber) {
             $("#victory").text("You Lose!");
             loseCounter += 1;
-            return loseCounter;
             restart();
         }
     });
