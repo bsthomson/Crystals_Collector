@@ -38,13 +38,13 @@ $(".crystal-image").on("click", function() {
     // Win condition
     if (counter == targetNumber) {
         $("#victory").text("You Win!");
-        winCounter += 1;
+        winCounter++;
         restart();
     }
     // Lose condition
     else if (counter >= targetNumber) {
         $("#victory").text("You Lose!");
-        loseCounter += 1;
+        loseCounter++;
         restart();
     }
 });
@@ -77,12 +77,12 @@ var restart = function() {
         $("#guess-total").text(counter);
         if (counter == targetNumber) {
             $("#victory").text("You Win!");
-            winCounter += 1;
+            winCounter++;
             restart();
         }
         else if (counter >= targetNumber) {
             $("#victory").text("You Lose!");
-            loseCounter += 1;
+            loseCounter++;
             restart();
         }
     });
